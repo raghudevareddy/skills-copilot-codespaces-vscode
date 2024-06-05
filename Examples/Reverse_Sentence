@@ -1,0 +1,7 @@
+# write a python code to reverse a sentence
+# Reversed sentence should start with a capital letter and end with a period.
+# Names and places in the sentence should start with a capital letter.
+# The sentence is an input from the user.
+input_sentence = input("Enter a sentence: ")
+reversed_sentence = " ".join([word.capitalize() for word in input_sentence.split()[::-1]]) + "."
+print(reversed_sentence)
